@@ -20,6 +20,7 @@ public class MemoryMemberRepository implements MemberRepository {
         return member;
     }
 
+
     @Override
     public Optional<Member> findById(Long id) {
         return Optional.ofNullable(store.get(id));
